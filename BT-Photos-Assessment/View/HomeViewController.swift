@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var warningLbl: UILabel!
     @IBOutlet weak var noDataLbl: UILabel!
     @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var numberTextField: UITextField!
@@ -41,7 +42,13 @@ class HomeViewController: UIViewController {
     
     @IBAction func sendBtnAction(_ sender: Any) {
         self.numberTextField.resignFirstResponder()
-        self.loadData()
+        
+        if self.numberTextField.text == "" || self.numberTextField.text == nil {
+            self.warningLbl.isHidden = false
+        }else{
+            self.warningLbl.isHidden = true
+            self.loadData()
+        }
         
     }
     

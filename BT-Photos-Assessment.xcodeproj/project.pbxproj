@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		840BD7352B8883F90006C9F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7342B8883F90006C9F0 /* AppDelegate.swift */; };
 		840BD7372B8883F90006C9F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7362B8883F90006C9F0 /* SceneDelegate.swift */; };
-		840BD7392B8883F90006C9F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7382B8883F90006C9F0 /* ViewController.swift */; };
+		840BD7392B8883F90006C9F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7382B8883F90006C9F0 /* HomeViewController.swift */; };
 		840BD73C2B8883F90006C9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840BD73A2B8883F90006C9F0 /* Main.storyboard */; };
 		840BD73E2B8883FA0006C9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840BD73D2B8883FA0006C9F0 /* Assets.xcassets */; };
 		840BD7412B8883FA0006C9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840BD73F2B8883FA0006C9F0 /* LaunchScreen.storyboard */; };
 		840BD74C2B8883FA0006C9F0 /* BT_Photos_AssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD74B2B8883FA0006C9F0 /* BT_Photos_AssessmentTests.swift */; };
 		840BD7562B8883FA0006C9F0 /* BT_Photos_AssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7552B8883FA0006C9F0 /* BT_Photos_AssessmentUITests.swift */; };
 		840BD7582B8883FA0006C9F0 /* BT_Photos_AssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7572B8883FA0006C9F0 /* BT_Photos_AssessmentUITestsLaunchTests.swift */; };
+		840BD7662B8887F10006C9F0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7642B8887F10006C9F0 /* PhotoCollectionViewCell.swift */; };
+		840BD7672B8887F10006C9F0 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840BD7652B8887F10006C9F0 /* PhotoCollectionViewCell.xib */; };
+		840BD7692B888C080006C9F0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD7682B888C080006C9F0 /* DetailsViewController.swift */; };
+		840BD76B2B889CA70006C9F0 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD76A2B889CA70006C9F0 /* PhotosModel.swift */; };
+		840BD76D2B889CB40006C9F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD76C2B889CB40006C9F0 /* NetworkManager.swift */; };
+		840BD76F2B889CCA0006C9F0 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD76E2B889CCA0006C9F0 /* PhotosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		840BD7312B8883F90006C9F0 /* BT-Photos-Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BT-Photos-Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840BD7342B8883F90006C9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840BD7362B8883F90006C9F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		840BD7382B8883F90006C9F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		840BD7382B8883F90006C9F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		840BD73B2B8883F90006C9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840BD73D2B8883FA0006C9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840BD7402B8883FA0006C9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		840BD7512B8883FA0006C9F0 /* BT-Photos-AssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BT-Photos-AssessmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840BD7552B8883FA0006C9F0 /* BT_Photos_AssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_Photos_AssessmentUITests.swift; sourceTree = "<group>"; };
 		840BD7572B8883FA0006C9F0 /* BT_Photos_AssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_Photos_AssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		840BD7642B8887F10006C9F0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		840BD7652B8887F10006C9F0 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		840BD7682B888C080006C9F0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		840BD76A2B889CA70006C9F0 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		840BD76C2B889CB40006C9F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		840BD76E2B889CCA0006C9F0 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,10 @@
 			children = (
 				840BD7342B8883F90006C9F0 /* AppDelegate.swift */,
 				840BD7362B8883F90006C9F0 /* SceneDelegate.swift */,
-				840BD7382B8883F90006C9F0 /* ViewController.swift */,
-				840BD73A2B8883F90006C9F0 /* Main.storyboard */,
+				840BD7712B889CE70006C9F0 /* NetworkManger */,
+				840BD7702B889CD90006C9F0 /* Model */,
+				840BD7722B889CF60006C9F0 /* ViewModel */,
+				84D9C0082B89D635003A83F8 /* View */,
 				840BD73D2B8883FA0006C9F0 /* Assets.xcassets */,
 				840BD73F2B8883FA0006C9F0 /* LaunchScreen.storyboard */,
 				840BD7422B8883FA0006C9F0 /* Info.plist */,
@@ -125,6 +139,42 @@
 				840BD7572B8883FA0006C9F0 /* BT_Photos_AssessmentUITestsLaunchTests.swift */,
 			);
 			path = "BT-Photos-AssessmentUITests";
+			sourceTree = "<group>";
+		};
+		840BD7702B889CD90006C9F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				840BD76A2B889CA70006C9F0 /* PhotosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		840BD7712B889CE70006C9F0 /* NetworkManger */ = {
+			isa = PBXGroup;
+			children = (
+				840BD76C2B889CB40006C9F0 /* NetworkManager.swift */,
+			);
+			path = NetworkManger;
+			sourceTree = "<group>";
+		};
+		840BD7722B889CF60006C9F0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				840BD76E2B889CCA0006C9F0 /* PhotosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84D9C0082B89D635003A83F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				840BD7382B8883F90006C9F0 /* HomeViewController.swift */,
+				840BD7682B888C080006C9F0 /* DetailsViewController.swift */,
+				840BD7642B8887F10006C9F0 /* PhotoCollectionViewCell.swift */,
+				840BD7652B8887F10006C9F0 /* PhotoCollectionViewCell.xib */,
+				840BD73A2B8883F90006C9F0 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840BD7412B8883FA0006C9F0 /* LaunchScreen.storyboard in Resources */,
+				840BD7672B8887F10006C9F0 /* PhotoCollectionViewCell.xib in Resources */,
 				840BD73E2B8883FA0006C9F0 /* Assets.xcassets in Resources */,
 				840BD73C2B8883F90006C9F0 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840BD7392B8883F90006C9F0 /* ViewController.swift in Sources */,
+				840BD7392B8883F90006C9F0 /* HomeViewController.swift in Sources */,
+				840BD76F2B889CCA0006C9F0 /* PhotosViewModel.swift in Sources */,
+				840BD7662B8887F10006C9F0 /* PhotoCollectionViewCell.swift in Sources */,
+				840BD76B2B889CA70006C9F0 /* PhotosModel.swift in Sources */,
+				840BD76D2B889CB40006C9F0 /* NetworkManager.swift in Sources */,
 				840BD7352B8883F90006C9F0 /* AppDelegate.swift in Sources */,
 				840BD7372B8883F90006C9F0 /* SceneDelegate.swift in Sources */,
+				840BD7692B888C080006C9F0 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -444,11 +500,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BT-Photos-Assessment/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BT-Photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,11 +529,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BT-Photos-Assessment/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BT-Photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +557,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nanthini.BT-Photos-AssessmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,7 +576,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nanthini.BT-Photos-AssessmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,14 +8,15 @@
 import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var thumbnailImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
-    func loadCellData(model: PhotosModel) {
-        
+    
+    func loadCellData(model: PhotosModel) {        
         let imageUrl = model.thumbnailUrl ?? ""
         guard let url = URL(string: imageUrl) else { return }
         UIImage.loadFrom(url: url) { image in
@@ -23,7 +24,6 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         }
         self.thumbnailImageView.layer.cornerRadius = 5
     }
-
 }
 
 extension UIImage {    
@@ -40,5 +40,4 @@ extension UIImage {
             }
         }
     }
-    
 }

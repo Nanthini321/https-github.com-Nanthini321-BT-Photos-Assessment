@@ -31,12 +31,12 @@ class DetailsViewController: UIViewController {
             self.placeholderImgView.image = image
         }
         self.placeholderImgView.layer.cornerRadius = 5
-        let customBackButton = UIBarButtonItem(image: UIImage(systemName: "arrow.backward"), style: .plain, target: self, action: #selector(customBackAction))
-        customBackButton.tintColor = .white
-        self.navigationItem.leftBarButtonItem = customBackButton
+        let backButton = UIBarButtonItem(image: UIImage(systemName: "arrow.backward"), style: .plain, target: self, action: #selector(backBtnAction))
+        backButton.tintColor = .white
+        self.navigationItem.leftBarButtonItem = backButton
     }
     
-    @objc func customBackAction() {
+    @objc func backBtnAction() {
         self.navigationController?.popViewController(animated: true)
     }
     
