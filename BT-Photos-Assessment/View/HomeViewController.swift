@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     
     let dataViewModel = PhotosViewModel()
     var enteredAlbumId = 0
-    var errorMessageView: UILabel?
+    var errorToastLabel: UILabel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +38,15 @@ class HomeViewController: UIViewController {
                 self.photosCollectionView.reloadData()
             }
         }
+        dataViewModel.onError = { [weak self] errorMessage in
+            DispatchQueue.main.async {
+                self?.showErrorToast(message: errorMessage)
+            }
+        }
     }
     
     @IBAction func sendBtnAction(_ sender: Any) {
         self.numberTextField.resignFirstResponder()
-        
         if self.numberTextField.text == "" || self.numberTextField.text == nil {
             self.warningLbl.isHidden = false
         }else{
@@ -52,7 +56,23 @@ class HomeViewController: UIViewController {
         
     }
     
+    func showErrorToast(message: String) {
+        errorToastLabel = UILabel(frame: CGRect(x: 16, y: view.frame.size.height - 100, width: view.frame.size.width - 32, height: 40))
+        errorToastLabel?.backgroundColor = UIColor.red
+        errorToastLabel?.textColor = UIColor.white
+        errorToastLabel?.textAlignment = .center
+        errorToastLabel?.layer.cornerRadius = 8
+        errorToastLabel?.clipsToBounds = true
+        errorToastLabel?.text = message
+        view.addSubview(errorToastLabel!)
+        UIView.animate(withDuration: 2.0, delay: 0.5, options: .curveEaseOut, animations: {
+            self.errorToastLabel?.alpha = 0.0
+        }, completion: { _ in
+            self.errorToastLabel?.removeFromSuperview()
+        })
+    }    
 }
+
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -94,6 +114,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 }
+
 extension HomeViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
